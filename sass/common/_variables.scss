@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Acherus Feral";
+  font-weight: 300;
+  src: local("Acherus Feral"),
+  url('../fonts/AcherusFeral-Light.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: "Acherus Feral";
+  font-weight: 700;
+  src: local("Acherus Feral"),
+  url('../fonts/AcherusFeral-Bold.woff2') format("woff2");
+}
+
+:root {
+  --font-family: "Acherus Feral", sans-serif;
+  --main-color: #383838;
+  --second-color: #999999;
+  --accent-color: #751f9c;
+}
