@@ -1,0 +1,49 @@
+.advantages {
+  margin-top: 200px;
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+  &__heading {
+    flex: 0 0 440px;
+    &_text {
+      p {
+        font-size: 24px;
+        color: var(--second-color);
+      }
+    }
+  }
+  &__list {
+    border-radius: 20px;
+    background: var(--accent-color);
+    padding: 80px 45px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 40px 0;
+    &_num {
+      color: rgba(255, 255, 255, 0.50);
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 120%; /* 31.2px */
+      text-transform: uppercase;
+    }
+    &_title {
+      color: #fff;
+      width: 50%;
+    }
+    &_text {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 120%; /* 28.8px */
+      width: 50%;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+}
