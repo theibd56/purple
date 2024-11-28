@@ -1,0 +1,66 @@
+.footer{
+  margin-top: 100px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 0;
+    border-top: 1px solid #999;
+  }
+  &__nav {
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      a {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 105%; /* 18.9px */
+        letter-spacing: 0.36px;
+        text-transform: uppercase;
+        transition: all .3s ease;
+        &:hover {
+          opacity: 0.6;
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__phone {
+    color: var(--main-color);
+    text-align: right;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 105%; /* 18.9px */
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    &:hover {
+      color: var(--main-color);
+      opacity: 0.6;
+    }
+  }
+  &__feedback {
+    color: var(--main-color);
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%; /* 18.9px */
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    display: block;
+    transition: all .3s ease;
+    &:hover {
+      color: var(--main-color);
+      opacity: 0.6
+    }
+  }
+}
