@@ -93,6 +93,17 @@ select {
   padding: 0 50px;
 }
 
+.suptitle {
+  color: var(--accent-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 138%; /* 22.08px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 
 h1 {
   color: var(--main-color);
