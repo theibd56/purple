@@ -1,7 +1,7 @@
 .header {
   padding: 50px 0;
   position: absolute;
-  z-index: 1000;
+  z-index: 9999;
   top: 0;
   width: 100%;
   &__container {
@@ -72,7 +72,40 @@
       opacity: 0.6
     }
   }
+  &__bottom {
+    border-top: 1px solid #E8E3E6;
+
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    transition:
+            opacity .2s ease-in-out,
+            visibility .2s ease-in-out,
+            height .3s ease-in-out,
+            margin .3s ease-in-out,
+            padding .3s ease-in-out;
+    .header__nav {
+      .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap:30px
+      }
+    }
+  }
   &-burger {
     display: none;
+  }
+  &.active {
+    background: #FFF;
+    .header__bottom {
+      margin-top: 20px;
+      padding:20px 10px 0;
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
   }
 }

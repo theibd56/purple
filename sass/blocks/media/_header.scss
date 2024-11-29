@@ -6,7 +6,12 @@
 
 @media screen and (max-width: 992px) {
   .header {
-    &__nav, &__feedback {
+    &__container {
+      .header__nav {
+        display: none;
+      }
+    }
+    &__feedback {
       display: none;
     }
     &__contacts {
@@ -16,6 +21,9 @@
     &__phone {
       color: var(--main-color);
     }
+
+
+
     &-burger {
       display: flex;
       align-items: center;
