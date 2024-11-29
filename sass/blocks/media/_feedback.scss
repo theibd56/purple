@@ -1,0 +1,88 @@
+@media screen and (max-width:1600px) {
+  .feedback {
+    &__heading {
+      flex: 0 0 390px;
+    }
+  }
+}
+
+@media screen and (max-width:1450px) {
+  .feedback {
+    &__heading {
+      flex: auto;
+      margin-bottom: 20px;
+      &_title {
+        margin-bottom: 10px;
+      }
+    }
+    &__container {
+      flex-direction: column;
+    }
+    &__content {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .feedback {
+    margin-top: 120px;
+    &__content {
+      padding: 220px 50px 45px;
+      flex-direction: column;
+      &_right,&_left {
+        max-width: 100%;
+      }
+    }
+    &__image {
+      transform: scale(1.5);
+      &_1 {
+        width: 169.212px;
+        height: 176px;
+        left: 50%;
+        right: auto;
+      }
+      &_2 {
+        width: 184.364px;
+        height: 157.212px;
+        object-fit: contain;
+        right: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:576px) {
+  .feedback {
+    &__heading {
+      margin: 0;
+      &_text {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    &__content {
+      padding: 220px 20px 40px;
+    }
+    &__form {
+      gap: 30px;
+      &_item {
+        input, textarea {
+          font-size: 16px;
+        }
+        button {
+          height: 60px;
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+          margin: 0;
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

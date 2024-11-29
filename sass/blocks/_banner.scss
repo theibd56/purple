@@ -2,11 +2,13 @@
   overflow: hidden;
   background: #ECECEC;
   &__container {
-    padding: 260px 0 80px;
+    padding: 260px 50px 80px;
     position: relative;
   }
   &__content {
     max-width: 900px;
+    position: relative;
+    z-index: 5;
   }
   &__bg {
     &_small {

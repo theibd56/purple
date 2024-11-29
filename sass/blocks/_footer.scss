@@ -5,14 +5,16 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 50px 0;
+    padding: 50px;
     border-top: 1px solid #999;
   }
   &__nav {
     .menu {
       display: flex;
       align-items: center;
-      gap: 40px;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 20px;
       a {
         text-align: center;
         font-size: 18px;
@@ -42,6 +44,7 @@
     letter-spacing: 0.36px;
     text-transform: uppercase;
     transition: all .3s ease;
+    white-space: nowrap;
     &:hover {
       color: var(--main-color);
       opacity: 0.6;
@@ -58,6 +61,7 @@
     text-transform: uppercase;
     display: block;
     transition: all .3s ease;
+    white-space: nowrap;
     &:hover {
       color: var(--main-color);
       opacity: 0.6

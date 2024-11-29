@@ -1,0 +1,40 @@
+@media screen and (max-width:1200px) {
+  .footer {
+    &__container {
+      padding: 50px 10px
+    }
+    &__nav {
+      .menu {
+        column-gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .footer {
+    &__container {
+      align-items: normal;
+      flex-direction: column-reverse;
+      gap: 80px;
+    }
+    &__nav {
+      .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 24px;
+      }
+    }
+    &__contacts {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    &__container {
+      padding: 35px 10px;
+    }
+  }
+}

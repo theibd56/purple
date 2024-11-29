@@ -36,6 +36,9 @@
       display: -webkit-box;
       -webkit-box-orient: vertical;
       overflow: hidden;
+
+      position: relative;
+      z-index: 3;
     }
   }
 }

@@ -14,7 +14,9 @@
     .menu {
       display: flex;
       align-items: center;
-      gap: 40px;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 20px;
       a {
         color: var(--main-color);
         text-align: center;
@@ -47,6 +49,7 @@
     letter-spacing: 0.44px;
     text-transform: uppercase;
     transition: all .3s ease;
+    white-space: nowrap;
     &:hover {
       color: #FFF;
       opacity: 0.6;
@@ -63,9 +66,13 @@
     letter-spacing: 0.44px;
     text-transform: uppercase;
     transition: all .3s ease;
+    white-space: nowrap;
     &:hover {
       color: #FFF;
       opacity: 0.6
     }
+  }
+  &-burger {
+    display: none;
   }
 }
