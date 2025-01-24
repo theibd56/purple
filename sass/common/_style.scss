@@ -108,12 +108,12 @@ select {
   position: fixed;
   inset: 0;
   z-index: 100;
-  background: rgba(117, 31, 156, 0.50);
+  background: var(--accent-color);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   &.active {
-    opacity: 1;
+    opacity: 0.5;
     visibility: visible;
   }
 }
