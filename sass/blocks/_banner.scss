@@ -13,34 +13,60 @@
   &__bg {
     &_small {
       position: absolute;
-      top: -100px;
-      left: 800px;
+      top: 125px;
+      left: 1660px;
+
+      width: 142px;
+      height: 142px;
     }
     &_large {
       position: absolute;
-      top: -350px;
-      left: 1050px;
+      bottom: -200px;
+      left: 1085px;
+
+      width: 785px;
+      height: 785px;
     }
-    svg {
-      path {
-        fill: var(--accent-color);
-      }
+    &_item {
+      background: var(--accent-color);
+      border-radius: 50%;
     }
   }
   &__descr {
     margin-top: 30px;
     font-size: 24px;
   }
+  //&__image {
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: 853px;
+  //  z-index: 5;
+  //  width: 1067px;
+  //  height: 800px;
+  //  img {
+  //    width: 100%;
+  //    height: 100%;
+  //    object-fit: cover;
+  //  }
+  //}
   &__image {
-    position: absolute;
-    bottom: -30px;
-    left: 1000px;
-    z-index: 5;
-    width: 900px;
-    height: 700px;
-    img {
-      width: 100%;
-      object-fit: cover;
+    &_item {
+      position: absolute;
+      z-index: 3;
+    }
+    &_1 {
+      left: 1388px;
+      bottom: 0;
+    }
+    &_2 {
+      left: 1173px;
+      //right: 510px;
+      bottom: 7px;
+    }
+    &_3 {
+      left: 853px;
+      //right: 392px;
+      bottom: 155px;
     }
   }
   &__button {
